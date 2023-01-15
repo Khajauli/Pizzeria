@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Vogue";
+    src: url('css/fonts/Vogue.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sigantural";
+    src: url('css/fonts/Sigantural Demo.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: black;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.sello{
+    width: 90px;
+}
+.telefono{
+    width: 30px;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+/* cabecera*/
+#header{
+    width: 100%;
+    height: 90px;
+    background: black;
+    font-family: "Sigantural";
+    color: black;
+}
+#wrap{
+    float: left;
+    width: 780px;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+#menu{
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+#menu ul li{
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 10px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+#menu ul li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover{
+    color: #5D5046;
+    transform: scale(1.2,1.2);
+}
+
+/*#izquierda{
+    float: right;
+    width: 180px;
+    background-color: #5D5046;
+    color: #FFF8F0;
+    margin-top: 18px;
+    margin-right: 150px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms; 
+    border-radius: 13px; 
+}
+
+#izquierda h3{
+    float: right;
+    font-size: 20px;
+    height: 18px;
+    background: transparent;
+    margin-top: 10px;
+    margin-right: 6px;
+}*/
+
+/*menus*/
+/*tarjetas*/
+.card{
+    float: left;
+    width: 700px;
+    height: 600px;
+    border: 3px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    background: #FFF8F0;
+    overflow: hidden;
+    margin: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: all 300ms;
+}
+.card:hover{
+    background: black;
+}
+
+.card img{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    transform: scale(1.4);
+}
+.card:hover img{
+    transform: rotate(0deg) scale(1);
+}
+.card .category{
+    width: 100%;
+    height: 60px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Vogue";
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF8F0;
+    position: absolute;
+    transition: all 300ms;    
+}
+.card:hover .category{
+    color: #5D5046;
+    animation: mostrarCategoria 400ms linear;
+}
+@keyframes mostrarCategoria {
+    from{
+        color: #FFF8F0;
+    }
+    to{
+        color: #5D5046;
+    }    
+}
+
+
+/* carousel*/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 450px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 600px !important; /*esta es la parte importante para que todas tus card-img tengan la misma medida sin importar el tamaño de la imagen*/
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+
+  
+/*footer*/
+#footer{
+    width: 100%;
+    margin-top: -20px;
+    height: 495px;
+    background: black;
+    overflow: hidden;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 420px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: #5D5046;
+    font-family: "Sigantural";
+}
+
+#footer a{
+    text-decoration: none;
+    color: #FFF8F0;
+    transition: all 300ms;
+    font-size: 20px;
+}
+
+#footer h5{
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    font-family: "Sigantural";
+    font-size: 30px;
+    line-height: 55px;
+    color: #d1a766;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer h3{
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: left;
+    font-family: "Sigantural";
+    line-height: 55px;
+    color: #FFF8F0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+
+}
+#footer #info #Facebook{
+    margin-left: 100px;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li a:hover{
+    padding-left: 40px;
+    color: white;
+    width: 100%;
+}
+
+#footer #info a{
+    font-size: 20px;
+}
+
+#footer #info a:hover{
+    color: white;
+}
+
+#footer #info span{
+    font-size: 25px;
+    margin-left: 25px;
+
+}
+
+#footer #autor{
+    display: block;
+    text-align: center;
+    font-family: "Sigantural";
+    color:white;
+    font-size: 15px;
+}
+
+#footer #autor a:hover{
+    text-decoration: underline;
+    color: white;
+    font-size: 15px;
+}
